@@ -7,8 +7,6 @@
 git config --global user.email "tu@email.com"
 git config --global user.name "Tu Nombre"
 
-git config --global user.pass "Tu Nombre"
-
 # Nos permite visualizar el estado de nuestro proyecto. (Si hubo alguna modificación)
 
 git status
