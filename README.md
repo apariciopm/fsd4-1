@@ -22,3 +22,7 @@ git commit -m "Esto es un cambio"
 # Envía los cambios locales al repositorio remoto
 
 git push
+
+# Todo esto se puede hacer en Visual Studio Code
+
+¡¡Síííí!!
