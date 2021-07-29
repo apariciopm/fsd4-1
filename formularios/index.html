@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,34 @@
     <title>Formularios</title>
 </head>
 <body>
-    
+    <main>
+        <!-- El form sirve para crear un formulario -->
+        <form style="background-color:red">
+            <label for="nombre">
+                <!-- La etiqueta span funciona como... -->
+                <span>¿Cuál es tu nombre?</span>
+                <input type="text" name="nombre" id="nombre" required>
+            </label>
+            <label for="correo">
+                <span>Tu correo</span>
+                <input type="email" name="correo" id="correo">
+            </label>
+            <label for="calendario">
+                <input type="datetime-local" value="calendario">
+            </label>
+            <select>
+                <option value="Fútbol">Fútbol</option>
+                <option value="Rugby">Rugby</option>
+                <option value="Rugby">Tenis</option>
+            </select>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="FullStack">FullStack</option>
+                <option value="Marketing"></option>
+                <option value="Ciencia de datos"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>

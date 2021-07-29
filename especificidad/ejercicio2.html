@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de especificidad</title>
+
+    
+    <style>
+        .con-color {
+            color: slateblue;
+        }
+
+        .con-color {
+            color: turquoise;
+        }
+
+        .con-color {
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+     
+    <h1 class="con-color">Encabezado de la APP</h1>
+
+    <div class=".con-color">Primer DIV</div>
+    <div id="con-color">Segundo DIV</div>
+    <div id="#con-color">Tercer DIV</div>
+</body>
+</html>

@@ -11,5 +11,5 @@ p {
     color:blue;
 }
 #parrafoDos{
-    color:white;
+    color:white !important;
 }

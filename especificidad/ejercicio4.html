@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de especificidad</title>
+
+    
+    <style>
+        div {
+            color: red;
+        }
+
+        #segundo {
+            color: gold;
+        }
+
+        #verde {
+            color: green;
+        }
+
+        .fuente-azul {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div>Primer DIV</div>
+
+    <div id="segundo">Segundo DIV</div>
+
+    <div class="fuente-azul">Tercer DIV</div>
+
+    <div id="verde" class="fuente-azul">Cuarto DIV</div>
+</body>
+</html>
