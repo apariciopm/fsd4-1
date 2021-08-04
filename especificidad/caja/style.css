@@ -20,14 +20,13 @@ h1 {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
-    border: 20px solid black;
 }
 
 .nav li {
     display: inline-block;
 }
 
-.na a {
+.nav a {
     color: white;
     background-color:chartreuse;
     padding: 5px;
