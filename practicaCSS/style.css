@@ -5,11 +5,61 @@ h1{
     color:blue;
 }
 p {
-    color: rgb(161, 0, 0);
+    color: rgb(161, 0, 0) !important;
 }
 .parrafo {
     color:blue;
 }
+#parrafoDos{
+    color:white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #parrafoDos{
     color:white !important;
 }

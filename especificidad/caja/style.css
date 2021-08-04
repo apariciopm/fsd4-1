@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:blueviolet;
+    font-family: serif;
+    font-size: 10px
+}
+
+.title {
+    font-size:18px;
+    font-family: monospace;
+}
+
+.nav{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    border: 20px solid black;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.na a {
+    color: white;
+    background-color:chartreuse;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.nav .aprende {
+    background-color:red
+}
