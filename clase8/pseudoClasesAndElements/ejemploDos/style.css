@@ -1,0 +1,25 @@
+ol li:nth-child(2){
+    background-color:blue;
+}
+
+.lista1 li:hover {
+    font-weight:bold;
+    background-color: yellow;
+}
+
+input:checked {
+    width:50px;
+    height:50px;
+}
+
+
+input:checked + span{
+    font-size: 4rem;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+p::-moz-selection { color: red}
+p::selection { color: red;
+    font-size: 100px; }
