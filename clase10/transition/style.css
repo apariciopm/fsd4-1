@@ -1,0 +1,120 @@
+/* 
+    Las transiciones en CSS son una forma de darle vida a nuestras aplicaciones.
+
+    Hay cuatro propiedades a tener en cuenta cuando creamos una transición:
+
+    1.  transition-property 
+        Establece la o las propiedades que a animar.
+        Valores: all (todas) | none (ninguna) | propiedad (ej color)
+
+    2.  transition-duration
+        Establece la duración de la transición
+        Valores: duración en segundos o milisegundos (ej 1000ms o 1s)
+
+    3.  transition-delay
+        Establece el retraso (o delay) antes de comenzar con la transición
+        Valores: duración en segundos o milisegundos (ej 1500ms o 1.5s)
+
+    4.  transition-timing-function 🤯🤯🤯
+        Establece la forma en la cual transcurrirá la transición.
+        Valores: ease | linear | ease-in | ease-out | ease-in-out...
+        https://cubic-bezier.com/#.17,.67,.83,.67
+
+    También podemos asignar los cuatro valores en una propiedad abreviada:
+    -> transition: propiedad duración delay timing-function
+    Por ejemplo:
+    -> transition: border-radius 1s 1s ease-in-out
+
+    Ejercicio:
+      Para los botones en el header, cuando le pasamos el mouse por arriba (hover):
+      1. hacer que el primer boton se ensanche (width)
+      2. hacer que el segundo boton se agrande (height, width)
+      3. hacer que el tercer boton cambie de color (background-color)
+
+      Para los botones en la section, cuando la página se carga, hacer que todos se muevan 400px para la derecha (transform: translateX(400px)):
+      4. para el primer boton que se mueva de forma lineal (linear)
+      5. para el segundo boton que empiece moviéndose rápido y luego vaya más lento (ease-out)
+      6. para el tercer boton que se mueva de una forma "rara" (usar función custom: https://cubic-bezier.com/#.17,.67,.83,.67)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    align-items: center;
+    justify-items: center;
+    background-color: gainsboro;
+  }
+  
+  header>button {
+    background-color: crimson;
+    width: 60%;
+    height: 15%;
+    transition-duration: 1s;
+  }
+  
+  section>button {
+    height: 30px;
+    width: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: translateX(100px) translateY(100px);
+  }
+  
+  .linear {
+    background-color: brown;
+    transition-timing-function: linear;
+  }
+  
+  .ease-out {
+    background-color: blue;
+    transition-timing-function: ease-out;
+  }
+  
+  .funcion {
+    background-color: blueviolet;
+    transition-timing-function: cubic-bezier(0.63, 1.59, 0.3, -0.51);
+  }
+  
+  .ensancha {
+    transition-property: width;
+  }
+  
+  .ensancha:hover {
+    width: 90%;
+  }
+  
+  /* .agranda {
+    transition-property: width, height;
+  } */
+  
+  .agranda:hover {
+    width: 90%;
+    height: 30%;
+  }
+  
+  /* .cambia-color {
+    transition-property: background-color;
+  } */
+  
+  .cambia-color:hover {
+    background-color: blue;
+  }
