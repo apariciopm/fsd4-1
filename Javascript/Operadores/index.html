@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Si el usuario es menor de 18 años, le saldrá, debajo de su nombre completo y año de nacimiento, el mensaje: 
+    “Eres menor de edad, no podemos darte de alta hasta el año XXXX” 
+    
+    Si es mayor de 18 años y menor de 25, le saldrá el mensaje: “Tienes un 10% de descuento”
+    Si es mayor de 25 años, le saldrá el mensaje: “Lo sentimos, pero no tienes descuento”
+    Si tiene justo 18 o 25 años, le saldrá el mensaje: “Premio, tienes un descuento especial del 20%”
+    Si introduce mal la edad (registra por ejemplo la edad en palabras en vez de números):
+    Saldrá un mensaje: “Hay un error, no hemos podido calcular tu edad”
+    En el año de nacimiento saldrá: “no puede calcularse” -->
+
+    <script>
+        let nombre = prompt("¿Cuál es tu nombre?");
+        let apellido = prompt("¿Cuál es tu apellido?");
+        let edad = prompt("¿Qué edad tienes?");
+        edad = parseInt(edad);
+        let year = 2021 - edad
+        // Switch
+        if(edad < 18) { // False
+            let mayorEdad = year + 18
+            document.write(`Eres menor de edad, no podemos darte de alta hasta el año ${mayorEdad}`)
+        } else if (edad > 18 && edad < 25) {
+            document.write("Tienes un 10% de descuento");
+        } else if (edad > 25){
+            document.write("Lo sentimos, pero no tienes descuento");
+        } else if ('18' == 18 || edad ==25) {
+            document.write("Premio, tienes un descuento especial del 20%");
+        }
+        
+    </script>
+</body>
+</html>
