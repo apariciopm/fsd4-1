@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo - Seleccionar elemento</title>
+  </head>
+  <body>
+    <header class="encabezado-pagina">HEADER</header>
+    <main id="main-content">
+      <h1>MAIN TITLE</h1>
+      <article>MAIN ARTICLE</article>
+    </main>
+    <footer>
+      <ul>
+        <li>FOOTER 1</li>
+        <li>FOOTER 2</li>
+        <li>FOOTER 3</li>
+      </ul>
+    </footer>
+    <script>
+     
+    const a = prompt("Ingrese el valor de a ")
+    const b = prompt("Ingrese el valor de b ")
+    const c = prompt("Ingrese el valor de c ")
+
+
+    const mayor = function (a, b, c) {
+        let aux = a; 
+            aux = 10
+        
+
+        if (b > aux) {
+            aux = b;
+        }
+        
+
+        
+        if (c > aux) {
+            aux = c;
+        }
+
+        return aux;
+    };
+
+    console.log(mayor(10, 20, 50))
+
+  //  alert(`El mayor es ${mayor(a, b, c)}` )
+    
+    </script>
+  </body>
+</html>
