@@ -76,3 +76,5 @@ Escribir una funcion que retorne la suma de los primeros  5 numeros positivos*/
 /* 7
 Retornar la suma de todos los elementos de un array numerico
 */
+
+
